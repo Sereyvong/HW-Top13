@@ -1,0 +1,35 @@
+<DOCTYPE html>
+<html>
+	<head>
+		<title>ADS</title>
+		<link href="css/style.css" rel="stylesheet"/>
+		<script src="js/jquery.js"></script>
+		<script src="js/script.js"></script>
+		<script>
+			function check(){
+				if($("#btn").text()=="Hide"){
+					$("#btn").text("Show");
+				}else{
+					$("#btn").text("Hide");
+				}
+			}
+			$(function(){
+				$("#btn").click(function(){
+					$("#head1").toggle(function(){
+						if($("#btn").text()=="Hide"){
+							$("#btn").text("Show");
+						}else{
+							$("#btn").text("Hide");
+						}
+					});
+				});			
+			});
+		</script>
+		
+	</head>
+	<body>
+		<div class="head1" id="head1"></div>
+		<div class="head2" id="head2"></div>
+		<div class="btn" id="btn">Hide</div>		
+	</body>
+</html>
