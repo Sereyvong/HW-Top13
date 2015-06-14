@@ -19,8 +19,7 @@ function goTop(box,speed,distance){
 }
 
 // Slide animation
-function slide(){
-	
+function slide(){	
 	var width = $(window).width()-100; // get width 
 	var height = $(window).height()-100;// get height
 	// call animation go to left
