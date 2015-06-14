@@ -47,3 +47,23 @@ html, body {
 	border-radius: 0px 0px 5px 5px;
 	cursor:pointer;
 }
+.banner{
+	text-align:right;
+	width:300px;
+	height:150px;
+	float:right;
+	margin-right: 50px;
+}
+.logo{
+	float:right;
+	width:200px;
+	height:120px;
+	border:2px solid blue;
+	margin-top:10px;
+	text-align:center;
+	margin-right: 30px;
+	background-color:blue;
+}
+.logo > p{
+	padding:27px;
+}

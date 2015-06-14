@@ -1,22 +1,20 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>ADS</title>
+		
+		<!-- import css -->
 		<link href="css/style.css" rel="stylesheet"/>
+		
+		<!-- import js -->
 		<script src="js/jquery.js"></script>
-		<script src="js/script.js"></script>
 		<script>
-			function check(){
-				if($("#btn").text()=="Hide"){
-					$("#btn").text("Show");
-				}else{
-					$("#btn").text("Hide");
-				}
-			}
 			$(function(){
+				// event on button hide and show 
 				$("#btn").click(function(){
-					$("#head1").toggle(function(){
-						if($("#btn").text()=="Hide"){
+					$("#head1").slideToggle(function(){
+						// check text hide or show
+						if($("#btn").text() == "Hide"){
 							$("#btn").text("Show");
 						}else{
 							$("#btn").text("Hide");
@@ -28,7 +26,16 @@
 		
 	</head>
 	<body>
-		<div class="head1" id="head1"></div>
+		<div class="head1" id="head1">
+			<div class="logo">
+				<p>KHMER ACADEMY</p>
+			</div>
+			<div class="banner">
+				<h1>Khmer Academy</h1>
+				<p>khmeracademy@gmail.com</p>
+				<p>Visit our website <a href="#">hear</a></p>
+			</div>			
+		</div>
 		<div class="head2" id="head2"></div>
 		<div class="btn" id="btn">Hide</div>		
 	</body>
