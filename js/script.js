@@ -22,6 +22,7 @@ function goTop(box,speed,distance){
 function slide(){	
 	var width = $(window).width()-100; // get width 
 	var height = $(window).height()-100;// get height
+	
 	// call animation go to left
 	goLeft("box1",2000,width);
 	goLeft("box2",2200,width-50);
@@ -46,6 +47,4 @@ function slide(){
 	goTop("box3",2400,140);
 	goTop("box4",2600,210);
 	
-	// call again
-	slide();
 }
