@@ -46,5 +46,4 @@ function slide(){
 	goTop("box2",2200,70);
 	goTop("box3",2400,140);
 	goTop("box4",2600,210);
-	
 }
